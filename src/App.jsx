@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import ListStagiaire from './components/Stagiaire/ListStagiaire';
 import { BrowserRouter ,Routes ,Route } from 'react-router-dom';
 import DetailStagiair from './components/Stagiaire/DetailStagiair';
+import AddStagiare from './components/Stagiaire/AddStagiare';
 
 function App() {
   // quetion 7
@@ -29,6 +30,7 @@ function App() {
           {/* // Question 9 */}
           <Route path='/StagiarDetails/:nom' element={<DetailStagiair/>}/>
         </Routes>
+        <AddStagiare/>
       </BrowserRouter>
     </div>
   )
