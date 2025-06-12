@@ -6,6 +6,7 @@ import { BrowserRouter ,Routes ,Route } from 'react-router-dom';
 import DetailStagiair from './components/Stagiaire/DetailStagiair';
 import AddStagiare from './components/Stagiaire/AddStagiare';
 import Headr from './components/Header/Header';
+import StagaireApi from './components/Stagiaire/StagaireApi';
 
 function App() {
   // quetion 7
@@ -35,6 +36,8 @@ function App() {
           {/* Question 10 */}
           <Route path='/add' element={<AddStagiare/>}/>
         </Routes>
+        {/* Question 13 */}
+        <StagaireApi/>
       </BrowserRouter>
     </div>
   )
