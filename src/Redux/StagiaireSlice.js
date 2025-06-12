@@ -10,6 +10,13 @@ const initialState ={
             nom :"Marouane",
             prenom :"Bachar",
             filier :"full stack dev"
+        },
+        // adding this to test Question 8
+        {
+            image:"https://img.freepik.com/free-vector/gradient-api-illustration_23-2149379182.jpg",
+            nom :"Marstrx",
+            prenom :"Bachar",
+            filier :"full stack dev"
         }
     ]
 }

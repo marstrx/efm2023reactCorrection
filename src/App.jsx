@@ -1,6 +1,8 @@
 import React from 'react'
 import Stagiaire from './components/Stagiaire/Stagiaire';
 import { useSelector } from 'react-redux';
+import ListStagiaire from './components/Stagiaire/ListStagiaire';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   // quetion 7
@@ -17,8 +19,12 @@ function App() {
     
   return (
     <div>
+      <BrowserRouter>
       {/* // quetion 7 */}
-      <Stagiaire stagiaires={stagiaires}/>
+      <Stagiaire stagiaires={stagiaires[0]}/>
+      {/* Question 8 */}
+      <ListStagiaire/>
+      </BrowserRouter>
     </div>
   )
 }

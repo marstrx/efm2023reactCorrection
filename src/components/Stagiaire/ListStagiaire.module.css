@@ -1,0 +1,13 @@
+ /* Question 8 */
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container img {
+  width: 25%;
+  height: auto;
+}
+
+
