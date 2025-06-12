@@ -2,7 +2,8 @@ import React from 'react'
 import Stagiaire from './components/Stagiaire/Stagiaire';
 import { useSelector } from 'react-redux';
 import ListStagiaire from './components/Stagiaire/ListStagiaire';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter ,Routes ,Route } from 'react-router-dom';
+import DetailStagiair from './components/Stagiaire/DetailStagiair';
 
 function App() {
   // quetion 7
@@ -23,7 +24,11 @@ function App() {
       {/* // quetion 7 */}
       <Stagiaire stagiaires={stagiaires[0]}/>
       {/* Question 8 */}
-      <ListStagiaire/>
+        <Routes>
+          <Route path='/ListStagiaire' element={<ListStagiaire />}/>
+          {/* // Question 9 */}
+          <Route path='/StagiarDetails/:nom' element={<DetailStagiair/>}/>
+        </Routes>
       </BrowserRouter>
     </div>
   )

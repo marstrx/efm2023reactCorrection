@@ -13,10 +13,10 @@ const initialState ={
         },
         // adding this to test Question 8
         {
-            image:"https://img.freepik.com/free-vector/gradient-api-illustration_23-2149379182.jpg",
+            image:"https://cdn.futura-sciences.com/cdn-cgi/image/width=1024,quality=60,format=auto/sources/images/dossier/773/01-intro-773.jpg",
             nom :"Marstrx",
-            prenom :"Bachar",
-            filier :"full stack dev"
+            prenom :"Bachar2",
+            filier :"dector"
         }
     ]
 }
