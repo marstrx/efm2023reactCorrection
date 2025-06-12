@@ -5,6 +5,7 @@ import ListStagiaire from './components/Stagiaire/ListStagiaire';
 import { BrowserRouter ,Routes ,Route } from 'react-router-dom';
 import DetailStagiair from './components/Stagiaire/DetailStagiair';
 import AddStagiare from './components/Stagiaire/AddStagiare';
+import Headr from './components/Header/Header';
 
 function App() {
   // quetion 7
@@ -22,15 +23,18 @@ function App() {
   return (
     <div>
       <BrowserRouter>
+      {/* Question 11 */}
+      <Headr/>
       {/* // quetion 7 */}
       <Stagiaire stagiaires={stagiaires[0]}/>
       {/* Question 8 */}
         <Routes>
-          <Route path='/ListStagiaire' element={<ListStagiaire />}/>
+          <Route path='/' element={<ListStagiaire />}/>
           {/* // Question 9 */}
           <Route path='/StagiarDetails/:nom' element={<DetailStagiair/>}/>
+          {/* Question 10 */}
+          <Route path='/add' element={<AddStagiare/>}/>
         </Routes>
-        <AddStagiare/>
       </BrowserRouter>
     </div>
   )
